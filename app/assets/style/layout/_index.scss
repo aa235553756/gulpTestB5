@@ -1,5 +1,69 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+body{
+  font-family: 'Lato', sans-serif;
+}
+code{
+  color: $success;
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  color: $gray-900;
+}
+.icon{
+  width: 24px;
+  height: 24px;
+}
+img{
+  object-fit: cover;
+}
+
+.nav{
+  &-list .list-group-item{
+    border: none;
+    padding: 8px 32px;
+    &.active {
+      margin-top: 0;
+      position: relative;
+      color: $success;
+      &::before{
+        content: "";
+        position: absolute;
+        height: 32px;
+        top: 4px;
+        left: 0px;
+        border-left: 4px solid $success;
+      }
+    }
+  }
+  &-user-img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-select{
+  width: auto;
+  padding: 4px 36px 4px 0px ;
+  border: none;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+.assignment-list{
+  &.list-group{
+  width: 320px;
+  border-radius: 0;
+}
+&>.list-group-item.active{
+    background: $light;
+    color: $black;
+    border: 1px solid $gray-400;
+  }
+}
+
+.assignment-pagination{
+  & .btn{
+    padding: 8px 32px;
+  }
 }
