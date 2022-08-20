@@ -6,106 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boostrap Index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+    <main class="container-fluid p-0 d-flex">
+      <section>
+        <nav class="bg-light vh-100  flex-shrink-0 d-flex flex-column" style="width: 296px">
+          <h1 class="m-5 fs-6"><a href="#"><img src="../assets/images/logo-ANSWER.svg" alt="Logo"></a></h1>
+          <div class="nav-list list-group list-group-flush" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+              <span class="material-icons me-3 align-bottom">
+              poll
+              </span>
+              Dashboard
+            </a>
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+              <span class="material-icons me-3 align-bottom">
+                question_answer
+              </span>
+              Question
+            </a>
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+              <span class="material-icons me-3 align-bottom">
+                assignment
+              </span>
+              Assignment</a>
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+              <span class="material-icons me-3 align-bottom">
+                video_library
+              </span>
+              Course</a>
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+              <span class="material-icons me-3 align-bottom">
+                people
+              </span>
+              Admin</a>
+            <a class="list-group-item list-group-item-action mb-4 bg-light" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+              <span class="material-icons me-3 align-bottom">
+                settings
+              </span>
+              Settings</a>
+          </div>
+          <div class="nav-user mt-auto d-flex m-5 align-items-center">
+            <img  class="nav-user-img rounded-circle me-3" src="../assets/images/andychen.jpeg" alt="nav-user-img">
+            <div class="nav-user-info">
+              <p class="mb-1 lh-sm">Andy Chen</p>
+              <p class="text-black-50 fs-7 m-0">andy0401@mail.com</p>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="d-flex flex-column flex-grow-1 m-5">
+  <header class="assignment-header d-flex mb-5 align-items-center justify-content-between w-100">
+    <div class="assignment-header-content d-flex">
+      <h2 class="me-5">Assignment</h2>
+      <select name="Course" id="list-Course" class="form-select">
+        <option value="All Course">All Course</option>
+      </select>
+    </div>
+    <div class="assignment-header-icon d-flex">
+      <a href="#" class="icon me-4">
+        <span class="material-icons">
+          search
+        </span>
+      </a>
+      <a href="#" class="icon">
+        <span class="material-icons">
+          notifications_active
+        </span>
+      </a>
+    </div>
+  </header>
+  <section class="assignment-content d-flex">
+    <aside class="assignment-side">
+      <div class="assignment-side-select d-flex mb-0">
+        <select name="Course" id="list-Course" class="form-select">
+          <option value="All">All (4)</option>
+        </select>
+      </div>
+      <div class="assignment-list list-group mb-5 flex-shrink-0 me-3" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+          <div class="assignment-item-content">
+            <p class="fs-8 mb-1">Chapter Assignment 2</p>
+            <p class="m-0">Please check this file…</p>
+          </div>
+          <div class="assignment-item-time text-end">
+            <p class="fs-8 mb-2 lh-sm">4 hrs ago</p>
+            <p class="fs-8 m-0 text-black-50">Emily Wang</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+          <div class="assignment-item-content">
+            <p class="fs-8 mb-1">Chapter Assignment 1</p>
+            <p class="m-0">My Homework</p>
+          </div>
+          <div class="assignment-item-time text-end">
+            <p class="fs-8 mb-2 lh-sm">12 hrs ago</p>
+            <p class="fs-8 m-0 text-black-50">David Xu</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+          <div class="assignment-item-content">
+            <p class="fs-8 mb-1">Final Assignment</p>
+            <p class="m-0">Have a problem with this…</p>
+          </div>
+          <div class="assignment-item-time text-end">
+            <p class="fs-8 mb-2 lh-sm">18 hrs ago</p>
+            <p class="fs-8 m-0 text-black-50">Tony Wei</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+          <div class="assignment-item-content">
+            <p class="fs-8 mb-1">Final Assignment</p>
+            <p class="m-0">Did I do it right?</p>
+          </div>
+          <div class="assignment-item-time text-end">
+            <p class="fs-8 mb-2 lh-sm">19 hrs ago</p>
+            <p class="fs-8 m-0 text-black-50">Christina Lin</p>
+          </div>
+        </a>
+      </div>
+    </aside>
+    <section class="assignment-main w-100">
+      <p class="fs-8 lh-lg mb-0 pt-2 text-end">2 comments</p>
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <div>
+            <p class="fs-8 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+            <p class="mb-0">Please check this file for me, thanks!</p>
+          </div>
+          <a href="#" class="icon">
+            <span class="material-icons">
+              more_vert
+            </span>
+          </a>
+        </div>
+        <div class="card-body me-3">
+          <div class="usre-top">
+            <div class="nav-user mt-auto d-flex justify-content-between mb-3">
+              <div class="use-content d-flex">
+                <img src="../assets/images/emilywang.jpeg" alt="#" class="nav-user-img rounded-circle me-2">
+                <div>
+                  <p class="mb-1 lh-sm">Emily Wang</p>
+                  <p class="text-black-50 fs-8 m-0">10:38 AM (4 hours ago)</p>
+                </div>
+              </div>
+            </div>
+            <div class="user-content ms-6 fs-7">
+              <p>
+                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code>　 ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                <br>
+                What is the gap or extra space below image?
+              </p>
+              <a href="#" class="btn btn-light rounded-0 border" download="HW-2-David.zip">
+                <span class="material-icons align-top">
+                  attach_file
+                </span>
+                HW-2-David.zip
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            </div>
+          </div>
+          <hr class="ms-6">
+          <div class="usre-bottom">
+            <div class="nav-user mt-auto d-flex justify-content-between mb-3">
+              <div class="use-content d-flex">
+                <img src="../assets/images/andychen.jpeg" alt="#" class="nav-user-img rounded-circle me-2">
+                <div>
+                  <p class="mb-1 lh-sm">Andy Chen (You)</p>
+                  <p class="text-black-50 fs-8 m-0">13:24 AM (1 hours ago)</p>
+                </div>
+              </div>
+              <div class="use-icon d-flex">
+                <a href="#" class=" me-4">
+                  <span class="material-icons">
+                    star_border
+                  </span>
+                </a>
+                <a href="#">
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="user-content ms-6 fs-7">
+              <p class="mb-4">
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same 
+                line that a, b, c and d sit on. There is space below that line for the descenders 
+                you find on letters like g, j, p and q. 
+              </p>
+              <p class="mb-4">You can:</p>
+              <p class="mb-0">　• adjust the <code>vertical-align</code>　　of the image to position it elsewhere (e.g. the <code>middle</code> le　　) or</p> 
+              <p>　• change the <code>display</code> so it isn’t inline.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-
-    
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="assignment-pagination d-flex align-items-center justify-content-between mt-3">
+        <div class="pagination-icon">
+          <a href="#" class="text-decoration-none">
+            <span class="material-icons align-top text-de">
+              chevron_left
+            </span>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <span class="material-icons align-top">
+              navigate_next
+            </span>
+          </a>
+        </div>
+        <div class="d-flex">
+          <div class="btn me-3 border-success">Mark as read</div>
+          <div class="btn btn-success">Reply</div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
+  </section>
+</section>
 
-
-    <footer class="footer">
-      footer
-    </footer>
-
+    </main>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
